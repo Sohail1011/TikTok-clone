@@ -13,7 +13,7 @@ export function Header() {
   }
 
   return (
-    <header className="h-10 px-3 py-2">
+    <header className="h-10 px-3 py-2 relative">
       <nav className="flex justify-end gap-2 items-center">
         <Theme />
         <a href="/" className="btn border-none btn-ghost text-[1rem]">

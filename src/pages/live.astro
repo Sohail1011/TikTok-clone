@@ -1,7 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import { Dashboard } from "../layouts/Dashboard";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title='Live'>
+<Layout title="Live">
+  <Dashboard client:load>
     <h1>Live</h1>
+  </Dashboard>
 </Layout>

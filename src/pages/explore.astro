@@ -4,9 +4,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Explore">
-  <Dashboard client:load>
-    <div class="ml-[25rem]">
-      <h1>Explore</h1>
-    </div>
+  <Dashboard client:only>
+      <h1 class="text-5xl">Explore</h1>
   </Dashboard>
 </Layout>
