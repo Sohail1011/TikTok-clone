@@ -16,22 +16,22 @@ export function Header() {
     <header className="h-10 px-3 py-2">
       <nav className="flex justify-end gap-2 items-center">
         <Theme />
-        <button className="btn border-none btn-ghost text-[1rem]">
+        <a href="/" className="btn border-none btn-ghost text-[1rem]">
           <FaHome size={25} />
-          For You
-        </button>
-        <button className="btn border-none btn-ghost text-[1rem]">
+          Home
+        </a>
+        <a href='/explore'  className="btn border-none btn-ghost text-[1rem]">
           <FaCompass size={25} />
           Explore
-        </button>
-        <button className="btn border-none btn-ghost text-[1rem]">
+        </a>
+        <a href='/follow' className="btn border-none btn-ghost text-[1rem]">
           <FaHeart size={25} />
           Follow
-        </button>
-        <button className="btn border-none btn-ghost text-[1rem]">
+        </a>
+        <a href='/live' className="btn border-none btn-ghost text-[1rem]">
           <FaCamera size={25} />
           Live
-        </button>
+        </a>
         <button className="btn border-none btn-ghost text-[1rem]" onClick={() => handleClick()}>
           <FaPerson size={25} />
           Profile

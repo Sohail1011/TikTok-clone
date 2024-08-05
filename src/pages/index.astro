@@ -1,8 +1,10 @@
 ---
 import { Header } from "../components/Header";
+import { Hero } from "../components/Hero";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Tik Tok">
-  <Header client:idle />
+  <Header client:only />
+  <Hero />
 </Layout>
