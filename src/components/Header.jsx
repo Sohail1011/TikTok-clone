@@ -20,7 +20,7 @@ export function Header() {
           <FaHome size={25} />
           Home
         </a>
-        <a href='/explore'  className="btn border-none btn-ghost text-[1rem]">
+        <a href='/explore' className="btn border-none btn-ghost text-[1rem]">
           <FaCompass size={25} />
           Explore
         </a>
@@ -38,7 +38,7 @@ export function Header() {
         </button>
       </nav>
       {
-        !login ? <Form event={() => handleClick()} /> : <article className='hidden'></article>
+        !login && <Form event={() => handleClick()} />
       }
     </header>
   )

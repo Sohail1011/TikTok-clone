@@ -1,10 +1,10 @@
 ---
+import { Navbar } from "../components/Navbar";
 import { Dashboard } from "../layouts/Dashboard";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Explore">
-  <Dashboard client:only>
-      <h1 class="text-5xl">Explore</h1>
-  </Dashboard>
+  <Navbar client:only />
+  <Dashboard client:only />
 </Layout>

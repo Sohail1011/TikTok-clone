@@ -3,7 +3,7 @@ import { FaCamera, FaCompass, FaHeart, FaHome, FaTiktok } from 'react-icons/fa'
 import { FaPerson } from 'react-icons/fa6'
 import { Form } from '../components/Form'
 
-export const Dashboard = ({ children }) => {
+export const Dashboard = () => {
 
     const [login, setLogin] = useState(true)
 
@@ -41,11 +41,8 @@ export const Dashboard = ({ children }) => {
                         </button>
                     </div>
                 </section>
-                <section>
-                    {children}
-                </section>
                 {
-                    !login ? <Form event={() => handleClick()} /> : <article className='hidden'></article>
+                    !login && <Form event={() => handleClick()} />
                 }
             </article>
         </>
